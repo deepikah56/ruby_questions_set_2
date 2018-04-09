@@ -20,3 +20,25 @@
   # 4
   # I am car, I have 4
   #  wheels
+class Vehicle
+  def initialize(wheels)
+    @wheels=wheels
+  end
+  
+end
+class Bike<Vehicle
+  def bus
+  puts"enter number of wheels" 
+    @wheels
+end
+end
+class Car<Vehicle
+  def car
+    @wheels
+  end
+end
+b=Bike.new(2)
+
+  
+
+

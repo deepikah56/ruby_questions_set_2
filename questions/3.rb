@@ -16,4 +16,5 @@
 # Deleted file
 #        Or
 # File not found
-
+puts "1.Add file"
+puts "2.Delete file"

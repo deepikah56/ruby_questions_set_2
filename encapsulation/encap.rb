@@ -9,7 +9,7 @@
 	# 2. Use proper access specifiers to fulfill the client's requirements.
 
 #  required output
-	
+
 	# send message 'Hi friends' to the public group
 		# output ->  This is a Public Group
 							 # Hi Friends
@@ -19,16 +19,17 @@
 
 	# client should not be able to call the secureChat 
 
-class Message
-	def initialize
-		puts "This is a Messaging app"
-	end
+	class Message
+		def initialize
+			puts "This is a Messaging app"
+		end
 
 	# define sendPersonalMessage which calls the personalChat()
 
 	def groupChat(message)
 		puts "This is a Public Group"
 		puts message
+		
 	end
 
 	private
@@ -63,5 +64,12 @@ end
 
 
 
-client = User.new
+x = Message.new
+x.groupChat("Hi friends")
+ #y=groupChat.new
+ # x.secureChat()
+ client =User.new
+ client.sendPersonalMessage
+ client.sendSecureMessage
+ 
 
