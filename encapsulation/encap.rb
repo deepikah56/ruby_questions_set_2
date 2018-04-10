@@ -25,10 +25,10 @@
 		end
 
 	# define sendPersonalMessage which calls the personalChat()
-
 	def groupChat(message)
 		puts "This is a Public Group"
 		puts message
+		personalChat("Hi, how are you?")	
 		
 	end
 
@@ -37,6 +37,7 @@
 	def secureChat(message)
 		puts "This is a secure Chat"
 		puts message
+
 	end
 
 	protected
@@ -67,9 +68,9 @@ end
 x = Message.new
 x.groupChat("Hi friends")
  #y=groupChat.new
- # x.secureChat()
+  x.secureChat()
  client =User.new
  client.sendPersonalMessage
- client.sendSecureMessage
+ # client.sendSecureMessage
  
 
