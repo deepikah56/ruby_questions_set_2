@@ -20,25 +20,35 @@
   # 4
   # I am car, I have 4
   #  wheels
-class Vehicle
-  def initialize(wheels)
-    @wheels=wheels
-  end
-  
-end
-class Bike<Vehicle
-  def bus
-  puts"enter number of wheels" 
-    @wheels
-end
-end
-class Car<Vehicle
-  def car
-    @wheels
-  end
-end
-b=Bike.new(2)
 
-  
+class Vehilce
+ def initialize 
+ end 
+end 
+class Bike < Vehilce 
+  def bike 
+    p "Enter number of wheels" 
+    a = Integer(gets) 
+    if a == 2 
+      puts "I am bike, I have 2 wheels" 
+    else puts "Invalid"
+    end 
+  end 
+end 
+class Car < Vehilce 
+  def car 
+    p "Enter number of wheels" 
+    b = Integer(gets) 
+    if b == 4 
+    puts "I am car, I have 4 wheels" 
+    else puts "Invalid" 
+    end 
+  end 
+end 
+bike=Bike.new 
+bike.bike 
+car=Car.new
+car.car
+
 
 
