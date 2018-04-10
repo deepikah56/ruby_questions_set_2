@@ -4,4 +4,4 @@
   {:name => "Anil" , :age => 26 , :place => "xsz"}]
 # give output as 
 #[["Brad", 27, "xyz"], ["John", 26, "xtz"], ["Anil", 26, "xsz"]
-p 
+p hash.map{|i| i.values}

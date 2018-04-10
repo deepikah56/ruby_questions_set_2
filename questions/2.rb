@@ -2,10 +2,10 @@
 begin
 	puts "welcome "
 	puts "Enter the  first value"
-	a = gets.to_i
+	a = Integer(gets)
 	puts "You Entered #{a}"
 	puts "Enter the second value"
-	b = gets.to_i
+	b = Integer(gets)
 	puts "You Entered #{b}"
 	c=a-b
 	puts "result is #{c}"
